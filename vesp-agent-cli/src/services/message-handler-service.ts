@@ -253,7 +253,7 @@ export class MessageHandlerService {
   }
 
   private async attemptReconnect(retryCount: number): Promise<void> {
-        const maxRetries = 10;
+    const maxRetries = 10;
     const baseDelay = 5000; // 5 seconds
     const maxDelay = 60000; // 60 seconds
 
@@ -287,6 +287,5 @@ export class MessageHandlerService {
         process.exit(1);
       }
     }
-  }
   }
 }
